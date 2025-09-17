@@ -75,7 +75,7 @@ except ImportError:
     SEVEN_ZIP_SUPPORT = False
 
 # Password protection (kept in background but not shown to user)
-PASSWORD = "Siyabonga@18"  
+PASSWORD = ""  
 
 class EncryptionThread(threading.Thread):
     def __init__(self, func, *args, **kwargs):
@@ -1125,7 +1125,7 @@ class SmartReplaceTool:
             text=(
                 "If you get stuck, this guide has your back.\n"
                 "Click above to see the full how-to with tips, screenshots and examples.\n"
-                "Because even engineers sometimes need a manual 😅."
+                "Because even engineers sometimes need a manual."
             ),
             font=('Segoe UI', 9, 'italic')
         ).pack(pady=20)
@@ -1619,7 +1619,7 @@ class SmartReplaceTool:
         master_password = simpledialog.askstring("Master Password", 
                                             "Enter master password:",
                                             show='*', parent=self.root)
-        if master_password != "Siyabonga@18":
+        if master_password != "------":
             messagebox.showerror("Error", "Incorrect master password")
             return
         
@@ -5386,4 +5386,5 @@ if __name__ == "__main__":
         
     root = tk.Tk()
     app = SmartReplaceTool(root)
+
     root.mainloop()
