@@ -1,0 +1,35 @@
+# file_version.txt
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(5, 3, 6, 0),
+    prodvers=(5, 3, 6, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo([
+      StringTable('040904B0', [
+        StringStruct('CompanyName', 'Siyabonga Thupana'),
+        StringStruct('FileDescription', 'SmartReplaceTool - Text Replacement Utility'),
+        StringStruct('FileVersion', '5.2.6.0'),
+        StringStruct('InternalName', 'SmartReplaceTool.exe'),
+        StringStruct('LegalCopyright', '© 2025 Siyabonga Thupana. All Rights Reserved.'),
+        StringStruct('OriginalFilename', 'SmartReplaceTool.exe'),
+        StringStruct('ProductName', 'SmartReplaceTool'),
+        StringStruct('ProductVersion', '5.2.6.0'),
+        StringStruct('Comments', 'SmartReplaceTool is an internal engineering utility for text replacement in DeltaV and documentation files.'),
+        StringStruct('LegalTrademarks', 'SmartReplaceTool™ is a project by Siyabonga Thupana'),
+        StringStruct('PrivateBuild', 'Internal Engineering Build'),
+        StringStruct('SpecialBuild', 'Rev 5.2.0 - FAT Support Edition'),
+        StringStruct('Language', 'English (United States)'),
+        StringStruct('SupportURL', 'mailto:siyabongatshem@gmail.com'),
+        StringStruct('Support', 'For support contact: siyabongatshem@gmail.com')
+      ])
+    ]),
+    VarFileInfo([VarStruct('Translation', [1033, 1200])])
+  ]
+)
