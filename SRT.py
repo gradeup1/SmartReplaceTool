@@ -74,7 +74,7 @@ try:
 except ImportError:
     SEVEN_ZIP_SUPPORT = False
 
-# Password protection (kept in background but not shown to user)
+# Password protection
 PASSWORD = ""  
 
 class EncryptionThread(threading.Thread):
@@ -155,7 +155,7 @@ class SmartReplaceTool:
         except Exception:
             pass
 
-        # Create main container
+        #  main container
         self.main_frame = ttk.Frame(root)
         self.main_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 
@@ -181,7 +181,7 @@ class SmartReplaceTool:
         # Initialize status_var early to prevent errors
         self.status_var = tk.StringVar(value="Ready")
        
-        # Add menu bar
+        # menu bar
         self.create_menu()
 
         self.setup_unlock_system()
@@ -234,7 +234,7 @@ class SmartReplaceTool:
         return True  # Always return True to allow access without prompting
 
 
-# Add this method to unlock the protected tabs
+# unlock the protected tabs
     def unlock_protected_tabs(self, code):
         if self.verify_unlock_code(code):
             self.locked_tabs["security"] = False
@@ -248,7 +248,7 @@ class SmartReplaceTool:
             messagebox.showerror("Error", "Invalid unlock code")
             return False
 
-# Add this method to update the tab text with lock symbols
+# update the tab text with lock symbols
     def update_tab_states(self):
         # Find the tab indices for security and self-destruct tabs
         for i in range(self.notebook.index("end")):
@@ -276,7 +276,7 @@ class SmartReplaceTool:
                 else:
                     self.notebook.tab(i, text="Port Scanner", state="normal")
                     
-# Add this method to show an unlock dialog
+#  show an unlock dialog
     def show_unlock_dialog(self):
         code = simpledialog.askstring("Unlock Tabs", 
                                     "Enter unlock code:",
@@ -5388,3 +5388,4 @@ if __name__ == "__main__":
     app = SmartReplaceTool(root)
 
     root.mainloop()
+
